@@ -1,9 +1,8 @@
-function submitForm(e: SubmitEvent) {
+const form = document.getElementById("form") as HTMLFormElement;
+form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  const form = (e.target !== null) ? (e.target as HTMLFormElement) : document.getElementById("form") as HTMLFormElement;
   const formData = new FormData(form);
-
   const formText = formData.get("formText") ?? "";
 
   fetch("/api/submit", {
@@ -15,4 +14,4 @@ function submitForm(e: SubmitEvent) {
       data: formText
     })
   });
-}
+});
