@@ -1,8 +1,8 @@
-import express from 'express';
-import path from 'path';
-import fs from 'fs';
-import util from 'util';
-import multer from 'multer';
+import express from "express";
+import path from "path";
+import fs from "fs/promises";
+import util from "util";
+import multer from "multer";
 
 const IP = "localhost"
 const PORT = 80
