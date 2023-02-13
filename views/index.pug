@@ -8,6 +8,7 @@ head
   link(rel='preconnect' href='https://fonts.googleapis.com')
   link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
   link(href='https://fonts.googleapis.com/css2?family=Montserrat&display=swap' rel='stylesheet')
+  script(src="form.js")
 body 
   .app
     .descBox.box
@@ -19,6 +20,6 @@ body
     .formBox.box
       .input
         .title Formularz
-        form(action="/", method="POST", enctype="multipart/form-data")
+        form#form(onsubmit="submitForm")
           textarea#formText(name="formText", cols="50", rows="5") 
           input#formSubmit(type="submit", name="formSubmit", value="Prześlij")
