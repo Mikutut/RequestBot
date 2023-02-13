@@ -1,0 +1,24 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='style.css')
+  title Music Bot
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Montserrat&display=swap' rel='stylesheet')
+body 
+  .app
+    .descBox.box
+      .title Music Bot
+      .desc 
+        p.descText 
+          | Music bot został storzony, aby zbierać listę utworów, które będą odtworzone na balu! Zebraliśmy w nim wszystko, co jest niezbędne, aby umożliwić Tobie wprowadzanie swoich ulubionych utworów muzycznych. W łatwym do użycia formularzu, możesz wprowadzić nazwę swojego ulubionego utworu, a następnie wysłać ją. Dzięki temu, bez względu na to, jaki jest gust muzyczny gości, wszyscy będą mogli cieszyć się muzyką, którą wybrałeś.
+          | Życzymy wszystkim uczniom udanego balu, pełnego niezapomnianych wspomnień!
+    .formBox.box
+      .input
+        .title Formularz
+        form(action="/", method="POST", enctype="multipart/form-data")
+          textarea#formText(name="formText", cols="50", rows="5") 
+          input#formSubmit(type="submit", name="formSubmit", value="Prześlij")

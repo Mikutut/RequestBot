@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+}
+
+.app {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e4e4e4;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 1199px) {
+    .desc {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .desc {
+        font-size: 18px;
+    }
+
+    .descText {
+        padding: 40px 0;
+        height: fit-content;
+    }
+}
+
+.box {
+    width: 80vw;
+    height: 100%;
+    margin: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #efefef;
+    -webkit-box-shadow: 0px 6px 20px 2px rgba(61, 61, 61, 0.32);
+    -moz-box-shadow: 0px 6px 20px 2px rgba(61, 61, 61, 0.32);
+    box-shadow: 0px 6px 20px 2px rgba(61, 61, 61, 0.32);
+    overflow-y: hidden;
+}
+
+.title {
+    text-align: center;
+    margin: 20px;
+    font-size: 24px;
+}
+
+.desc {
+    border-radius: 5px;
+    text-align: center;
+    margin: 26px;
+    height: calc(100% - 120px);
+    padding: 12px;
+    color: #6b6b6b;
+    word-spacing: 0.5px;
+    overflow-y: scroll;
+    -webkit-box-shadow: inset 0px 0px 17px 3px rgba(61, 61, 61, 0.32);
+    -moz-box-shadow: inset 0px 0px 17px 3px rgba(61, 61, 61, 0.32);
+    box-shadow: inset 0px 0px 17px 3px rgba(61, 61, 61, 0.32);
+    display: flex;
+    justify-content: center;
+}
+
+.formBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input>.title {
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+
+#formSubmit {
+    text-align: center;
+
+}
+
+.greetings {
+    justify-self: flex-end;
+}
+
+#formText {
+    max-width: calc(80% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+#formSubmit {
+    background-color: #222222;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    max-width: calc(80% - 20px);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#formSubmit:hover {
+    background-color: #444444;
+}
