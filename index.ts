@@ -1,26 +1,13 @@
-//
+import express from 'express';
+import path from 'path';
+import fs from 'fs';
+import util from 'util';
+import multer from 'multer';
 
+const IP = "localhost"
+const PORT = 80
 
-
-
-
-IP = "localhost"
-PORT = 80
-
-
-
-
-
-
-
-const express = require('express')
-const path = require('path')
-const fs = require('fs');
-const util = require('util');
-
-const app = express()
-
-const multer = require('multer');
+const app = express();
 
 // console.log() => zapisuje do pliku
 
